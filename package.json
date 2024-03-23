@@ -1,5 +1,5 @@
 {
-  "name": "NaufraZapp-MD",
+  "name": "ONYX",
   "version": "1.0.0",
   "description": "Super Bot",
   "main": "index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Bots-WhatsApp-OFC/SakuraBotLite-MD",
+  "homepage": "",
   "author": {
-    "name": "Bots-WhatsApp-OFC"
+    "name": ""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD.git"
+    "url": ""
   },
   "bugs": {
-    "url": "https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD/issues"
+    "url": ""
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
@@ -98,4 +98,4 @@
     "eslint": "^8.45.0",
     "eslint-config-google": "^0.14.0"
   }
-}
+  }

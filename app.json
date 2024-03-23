@@ -1,10 +1,10 @@
 {
-  "name": "SakuraBotLite-MD",
-  "website": "https://github.com/diegojadibot",
+  "name": "ONYX",
+  "website": "",
   "description": "Mejor Bot",
-  "repository": "https://github.com/diegojadibot/SakuraBotLite-MD",
-  "logo": "https://raw.githubusercontent.com/diegojadibot/SakuraBotLite-MD/master/src/pictures/heroku-icon.jpg",
-  "success_url": "https://github.com/diegojadibot/SakuraBotLite-MD",
+  "repository": "",
+  "logo": "",
+  "success_url": "",
   "keywords": [
     "nodejs",
     "heroku",

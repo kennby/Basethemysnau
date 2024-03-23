@@ -108,7 +108,7 @@ loadChatgptDB();
 
 /*◊════════════• ❮ INSTALACION Y CONEXIÓN ❯ •═════════════◊*/
 
-global.authFile = `NaufraBotSession`;
+global.authFile = `sesions`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -144,7 +144,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['NaufraZapp-MD', 'Safari', '2.0.0'] : methodCodeQR ? ['NaufraZapp-MD', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
+browser: opcion == '1' ? ['ONYX', 'Safari', '2.0.0'] : methodCodeQR ? ['ONYX', 'Safari', '2.0.0'] : ['Ubuntu', 'Chrome', '110.0.5585.95'],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -299,7 +299,7 @@ if (opcion == '1' || methodCodeQR) {
    if (connection == 'open') {
 console.log(chalk.yellowBright('\n╭──────────────────────◊\n╎✅ CONECTADO A WHATSAPP ✅\n╰──────────────────────◊\n'))
 //conn.fakeReply('5493873687620@s.whatsapp.net', '✅', '0@s.whatsapp.net', 'Hola, soy un bot nuevo.', '0@s.whatsapp.net')
- await conn.channelAccept('0029VaRibRvDuMRj6ozMSN1l');
+ await conn.channelAccept('');
    }
    /*◊════════════• ❮ MENSAJES DE REEMPLAZO ❯ •═════════════◊*/
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;

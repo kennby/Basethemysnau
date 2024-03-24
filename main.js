@@ -231,7 +231,7 @@ function clearTmp() {
 
 function purgeSession() {
 let prekey = []
-let directorio = readdirSync("./NaufraBotSession")
+let directorio = readdirSync("./sesions")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-') /*|| file.startsWith('session-') || file.startsWith('sender-') || file.startsWith('app-') */
 })
@@ -262,7 +262,7 @@ console.log(chalk.bold.red(`ⓘ Algo salio mal durante la eliminación, archivos
 }}
 
 function purgeOldFiles() {
-const directories = ['./NaufraBotSession/', './BotsWhatsAppOFC/']
+const directories = ['./sesions/', './BotsWhatsAppOFC/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -530,3 +530,4 @@ console.log(chalk.greenBright(`\n╭─────────◊ ARCHIVO ◊�
 _quickTest()
 .then()
 .catch(console.error)
+  

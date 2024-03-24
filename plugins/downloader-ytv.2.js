@@ -11,7 +11,7 @@ const handler = async (m, {conn, args}) => {
     const dl_url = await yt.video[q].download();
     const ttl = await yt.title;
     const size = await yt.video[q].fileSizeH;
-    const cap = `> ⓘ 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 𝘿𝙀 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼:\n\n> ✦ 𝙉𝙊𝙈𝘽𝙍𝙀/𝙏𝙄𝙏𝙐𝙇𝙊:\n> ${ttl}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> ${size}\n\n> NaufraZapp-MD • ${vs}`.trim();
+    const cap = `> ⓘ 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 𝘿𝙀 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼:\n\n> ✦ 𝙉𝙊𝙈𝘽𝙍𝙀/𝙏𝙄𝙏𝙐𝙇𝙊:\n> ${ttl}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> ${size}\n\n>  ${vs}`.trim();
     await await conn.sendMessage(m.chat, {document: {url: dl_url}, caption: cap, mimetype: 'video/mp4', fileName: ttl + `.mp4`}, {quoted: m});
   } catch {
     try {
@@ -20,7 +20,7 @@ const handler = async (m, {conn, args}) => {
       const n = lolh.result.title || 'error';
       const n2 = lolh.result.link;
       const n3 = lolh.result.size;
-      const cap2 = `> ⓘ 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 𝘿𝙀 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼:\n\n> ✦ 𝙉𝙊𝙈𝘽𝙍𝙀/𝙏𝙄𝙏𝙐𝙇𝙊:\n> ${n}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> ${n3}\n\n> NaufraZapp-MD • ${vs}`.trim();
+      const cap2 = `> ⓘ 𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎 𝘿𝙀 𝙇𝘼 𝘽𝙐𝙎𝙌𝙐𝙀𝘿𝘼:\n\n> ✦ 𝙉𝙊𝙈𝘽𝙍𝙀/𝙏𝙄𝙏𝙐𝙇𝙊:\n> ${n}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> ${n3}\n\n>  ${vs}`.trim();
       await conn.sendMessage(m.chat, {document: {url: n2}, caption: cap2, mimetype: 'video/mp4', fileName: n + `.mp4`}, {quoted: m});
     } catch {
       await conn.reply(m.chat, '> ⓘ 𝙉𝙤 𝙛𝙪𝙚 𝙥𝙤𝙨𝙞𝙗𝙡𝙚 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙧 𝙚𝙡 𝙫𝙞𝙙𝙚𝙤, 𝙥𝙤𝙧 𝙛𝙖𝙫𝙤𝙧 𝙞𝙣𝙩𝙚𝙣𝙩𝙚 𝙙𝙚 𝙣𝙪𝙚𝙫𝙤...', m);

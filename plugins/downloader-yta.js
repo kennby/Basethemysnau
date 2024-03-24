@@ -43,11 +43,11 @@ const handler = async (m, {text, conn, args, usedPrefix, command}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
    if (fileSizeInMB > 50) {
-    await conn.sendMessage(m.chat, {document: buff, caption: `> ✦ 𝙏𝙄𝙏𝙐𝙇𝙊/𝙉𝙊𝙈𝘽𝙍𝙀:\n${ttl_1}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> *${roundedFileSizeInMB}MB*\n\n> NaufraZapp-MD • ${vs}`, fileName: ttl_1 + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
+    await conn.sendMessage(m.chat, {document: buff, caption: `> ✦ 𝙏𝙄𝙏𝙐𝙇𝙊/𝙉𝙊𝙈𝘽𝙍𝙀:\n${ttl_1}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> *${roundedFileSizeInMB}MB*\n\n>  ${vs}`, fileName: ttl_1 + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
     await conn.sendMessage(m.chat, {text: `> ✅ 𝙎𝙚 𝙝𝙖 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙙𝙤 𝙨𝙪 𝙖𝙪𝙙𝙞𝙤 𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚.\n\n> ⓘ 𝙎𝙚 𝙚𝙣𝙫𝙞𝙤 𝙚𝙡 𝙖𝙪𝙙𝙞𝙤 𝙚𝙣 𝙛𝙤𝙧𝙢𝙖𝙩𝙤 𝙙𝙚 𝙙𝙤𝙘𝙪𝙢𝙚𝙣𝙩𝙤, 𝙮𝙖 𝙦𝙪𝙚 𝙥𝙚𝙨𝙖: \`${roundedFileSizeInMB}MB\`\n\n> ⓘ 𝙉𝙊𝙈𝘽𝙍𝙀/𝙏𝙄𝙏𝙐𝙇𝙊:\n${ttl_1}`, edit: key}, {quoted: m});
     enviando = false
    } else {
-    await conn.sendMessage(m.chat, {audio: buff, caption: `> ✦ 𝙏𝙄𝙏𝙐𝙇𝙊/𝙉𝙊𝙈𝘽𝙍𝙀:\n${ttl_1}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> *${roundedFileSizeInMB}MB*\n\n> NaufraZapp-MD • ${vs}`, fileName: ttl_1 + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
+    await conn.sendMessage(m.chat, {audio: buff, caption: `> ✦ 𝙏𝙄𝙏𝙐𝙇𝙊/𝙉𝙊𝙈𝘽𝙍𝙀:\n${ttl_1}\n\n> ✦ 𝙋𝙀𝙎𝙊 𝙏𝙊𝙏𝘼𝙇:\n> *${roundedFileSizeInMB}MB*\n\n>  ${vs}`, fileName: ttl_1 + '.mp3', mimetype: 'audio/mpeg'}, {quoted: m});
     await conn.sendMessage(m.chat, {text: `> ✅ 𝙎𝙚 𝙝𝙖 𝙙𝙚𝙨𝙘𝙖𝙧𝙜𝙖𝙙𝙤 𝙨𝙪 𝙖𝙪𝙙𝙞𝙤 𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚.`, edit: key}, {quoted: m});
     enviando = false   
    }    

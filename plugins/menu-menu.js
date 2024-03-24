@@ -26,7 +26,6 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 const document = doc[Math.floor(Math.random() * doc.length)];
  const str = `╔◊ •═════════════════• ◊╗
-║🌎 \`𝑵𝒂𝒖𝒇𝒓𝒂𝒁𝒂𝒑𝒑-𝑴𝑫\` 🌎
 ║•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
 ║𝘏𝘰𝘭𝘢 ${taguser}
 ║ ${date}
@@ -38,8 +37,6 @@ const document = doc[Math.floor(Math.random() * doc.length)];
 ║🚻 \`Nivel\` ➝ ${level}
 ║•┄┄┄┄┄┄┄┄┄┄┄•
 ║💎 \`Diamantes\` ➝ ${limit}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║💰 \`NZCoins\` ➝ ${money}
 ║•┄┄┄┄┄┄┄┄┄┄┄•
 ║🪙 \`Monedas\` ➝ ${joincount}
 ║•┄┄┄┄┄┄┄┄┄┄┄•
@@ -216,16 +213,14 @@ ${readMore}
 > _#robar *@tag*_
 > _#transfer *@tag*_
 > _#unreg_
-╰•─────────────────•╯
-
-> 𝙉𝙖𝙪𝙛𝙧𝙖𝙕𝙖𝙥𝙥-𝙈𝘿`.trim();     if (m.isGroup) { 
+╰•─────────────────•╯`.trim();     if (m.isGroup) { 
  // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
             const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": naufraMenus.getRandom(), "mediaUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`, "sourceUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`}}}, {quoted: m});
+      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": naufraMenus.getRandom(), "mediaUrl": `https://whatsapp.com/channel/0029VaDajsjLI8YRnDjT2y1v`, "sourceUrl": `https://whatsapp.com/channel/0029VaDajsjLI8YRnDjT2y1v`}}}, {quoted: m});
     } else {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
-      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": naufraMenus.getRandom(), "mediaUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`, "sourceUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`}}}, {quoted: fkontak2});
+      conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": naufraMenus.getRandom(), "mediaUrl": `https://whatsapp.com/channel/0029VaDajsjLI8YRnDjT2y1v`, "sourceUrl": `https://whatsapp.com/channel/0029VaDajsjLI8YRnDjT2y1v`}}}, {quoted: fkontak2});
     }
   } catch {
     conn.reply(m.chat, '> ⓘ Ocurrio un error inesperado, intentelo de nuevo...', m);
@@ -233,7 +228,7 @@ ${readMore}
 };
 handler.command = /^(menu|allmenu|menú|menucompleto|allmenú)$/i;
 handler.register = true
-handler.exp = 50;
+handler.exp = 0;
 handler.fail = null;
 export default handler;
 function clockString(ms) {
@@ -241,4 +236,4 @@ function clockString(ms) {
   const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
   const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
   return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':');
-}
+                 }

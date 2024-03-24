@@ -14,7 +14,7 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
 > ${usedPrefix + command} abrir*
 > ${usedPrefix + command} cerrar*
 
-> 𝙉𝙖𝙪𝙛𝙧𝙖𝙕𝙖𝙥𝙥-𝙈𝘿`.trim();
+>`.trim();
   }
   await conn.groupSettingUpdate(m.chat, isClose);
   {m.reply('> ✅ 𝙀𝙡 𝙜𝙧𝙪𝙥𝙤 𝙨𝙚 𝙝𝙖 𝙘𝙤𝙣𝙛𝙞𝙜𝙪𝙧𝙖𝙙𝙤 𝙘𝙤𝙧𝙧𝙚𝙘𝙩𝙖𝙢𝙚𝙣𝙩𝙚...');}
